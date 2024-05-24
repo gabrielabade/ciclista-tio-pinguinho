@@ -49,3 +49,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", () => {
+      // Fecha todos os accordions
+      accordions.forEach((item) => {
+        if (item !== accordion) {
+          item.classList.remove("active");
+          item.querySelector(".accordion-content").style.display = "none";
+        }
+      });
+
+      // Alterna o estado do accordion clicado
+      const content = accordion.querySelector(".accordion-content");
+      if (accordion.classList.contains("active")) {
+        accordion.classList.remove("active");
+        content.style.display = "none";
+      } else {
+        accordion.classList.add("active");
+        content.style.display = "block";
+      }
+    });
+  });
+});
