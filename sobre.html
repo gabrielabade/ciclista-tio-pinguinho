@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Tio Pinguinho</title>
+</head>
+
+<body>
+  <div class="mascara-formulario" onclick="hideForm()"></div>
+  <div class="logo-mobile-container">
+    <img src="./assets/logo-mobile.png" alt="logo-mobile" class="logo-mobile">
+  </div>
+
+  <div class="header">
+    <img src="./assets/logo-header.png" alt="logo-ciclista" class="logo-desktop">
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="#">Fale Conosco</a>
+    </div>
+  </div>
+
+  <div class="accordion-container">
+    <div class="accordion">
+      <h2 class="accordion-header">Sobre Ciclista Tio Pinguinho <i class="fas fa-chevron-down"></i></h2>
+      <div class="accordion-content">
+        <p>Fundada em 1979, Ciclista Tio Pinguinho é uma empresa renomada em Campo Bom, especializada no mercado de
+          bicicletas, peças e acessórios. Com mais de quatro décadas de experiência, nos dedicamos à excelência e à
+          total satisfação de nossos clientes.</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <h2 class="accordion-header">Nossa Filosofia<i class="fas fa-chevron-down"></i></h2>
+      <div class="accordion-content">
+        <p>Nosso compromisso é oferecer produtos e serviços de alta qualidade, mantendo parcerias estratégicas com os
+          melhores fornecedores nacionais e internacionais. Isso nos permite acompanhar os avanços tecnológicos do setor
+          e garantir a confiabilidade de tudo o que oferecemos.</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <h2 class="accordion-header">Nossos Produtos e Serviços<i class="fas fa-chevron-down"></i></h2>
+      <div class="accordion-content">
+        <p>No Tio Pinguinho, você encontra uma ampla variedade de bicicletas e artigos esportivos das marcas mais
+          conceituadas, como SouthBike, Mormaii, Ciclo, Monark, Caloi, Prince, Houston, Fischer, Oceano, entre outras.
+          Também somos uma assistência técnica autorizada e prestamos serviços especializados para esteiras da Dream
+          Fitness.</p>
+          <button onclick="showForm()">Solicitar Orçamento</button>
+      </div>
+    </div>
+    <div class="accordion">
+      <h2 class="accordion-header">Nossa Missão<i class="fas fa-chevron-down"></i></h2>
+      <div class="accordion-content">
+        <p>Nosso objetivo é contribuir para a melhoria da qualidade de vida das pessoas, promovendo o uso da bicicleta
+          em diversas esferas. Acreditamos que a bicicleta é uma invenção maravilhosa que proporciona benefícios tanto
+          para a saúde quanto para o meio ambiente.</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <h2 class="accordion-header">Onde Estamos<i class="fas fa-chevron-down"></i></h2>
+      <div class="accordion-content">
+        <p>Visite nossa loja localizada na Av. São Leopoldo, Nº 1830, no Bairro Celeste, Campo Bom, RS. Nossa equipe
+          está à disposição para ajudar você a encontrar o produto ou serviço perfeito.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.194496104442!2d-51.07429878933505!3d-29.68514027500272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951941344f09aa45%3A0x74743637694296b1!2sCiclista%20tio%20pinguinho!5e0!3m2!1spt-BR!2sbr!4v1716574727695!5m2!1spt-BR!2sbr"
+          width="300" height="200" style="border: 3px solid #00aeeea8;  border-radius: 10px; margin-top: 10px;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="redes-sociais">
+      <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/tiopinguinho/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:ciclistatiopinguinho@yahoo.com.br"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/5548991056014" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+
+
+  <div class="caixa-video">
+    <video src="./assets/video.mp4" autoplay muted loop class="video-desktop"></video>
+    <video src="./assets/video-mobile.mp4" autoplay muted loop class="video-mobile"></video>
+    <div class="mascara"></div>
+  </div>
+
+  <form id="formularioFaleConosco" class="formulario-fale-conosco">
+    <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
+    <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
+    <textarea id="duvida" placeholder="Escreva o que você precisa para orçamento aqui" name="duvida" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
