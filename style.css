@@ -292,32 +292,118 @@ textarea {
 .redes-sociais a:last-child {
   margin-right: 0;
 }
-
-@media (max-width: 1100px) {
-  .redes-sociais {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Ajuste a cor de fundo conforme necessário */
+/* CATALOGO*/
+.color-options {
   display: flex;
-  justify-content: space-around;
-  padding: 5px 0;
-  z-index: 1000; /* Certifique-se de que os ícones fiquem acima de outros elementos */
-}
- .redes-sociais a {
-  padding: 10px 15px;
-  font-size: 35px; /* Ajuste o tamanho dos ícones conforme necessário */
-  color: white;
-}
-.redes-sociais a:hover {
-  color: #00adee;
-  transition: color 0.3s ease;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.accordion-container {
-  padding-bottom: 80px; /* Ajuste o padding inferior conforme necessário */
+.carousel-navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
+.carousel-arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  user-select: none;
+}
+
+.carousel-arrow:hover {
+  color: #00adee;
+}
+
+.carousel-container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 2s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  color: white;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.bike-img {
+  width: 70%;
+  height: auto;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.color-circle:hover,
+.color-circle.selected {
+  border-color: #000;
+}
+
+.carousel-button {
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #00aeee90;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+@media (max-width: 769px) {
+  .redes-sociais {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.7
+    ); /* Ajuste a cor de fundo conforme necessário */
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    z-index: 1000; /* Certifique-se de que os ícones fiquem acima de outros elementos */
+  }
+  .redes-sociais a {
+    padding: 10px 15px;
+    font-size: 35px; /* Ajuste o tamanho dos ícones conforme necessário */
+    color: white;
+  }
+  .redes-sociais a:hover {
+    color: #00adee;
+    transition: color 0.3s ease;
+  }
+
+  .accordion-container {
+    padding-bottom: 80px; /* Ajuste o padding inferior conforme necessário */
+  }
 
   .container {
     padding: 0 20px;
@@ -435,5 +521,67 @@ textarea {
       rgba(28, 42, 72, 0.615) 50%,
       rgba(10, 12, 16, 0.99) 85%
     );
+  }
+
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .carousel {
+    display: flex;
+  }
+
+  .carousel-item {
+     margin-top: 50%;
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 2rem;
+  }
+
+  .bike-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel-navigation {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .carousel-button {
+    width: 90%;
+  }
+  .carousel-arrow {
+    font-size: 1.5rem;
+  }
+
+  .color-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .color-circle {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+
+  .color-circle.selected {
+    border-width: 2px;
   }
 }
