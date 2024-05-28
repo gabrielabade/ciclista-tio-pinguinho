@@ -91,9 +91,21 @@ document.addEventListener("DOMContentLoaded", function () {
       descricao:
         "A South Slim 2023 combina estilo minimalista, desempenho eficiente e durabilidade em uma bicicleta leve. Com componentes de qualidade, oferece ótimo custo-benefício, perfeita para ciclistas que valorizam economia sem abrir mão da qualidade.",
       cores: {
-        vermelha: "./assets/bicicleta1-vermelha.png",
+        pretaVermelha: "./assets/bicicleta1-vermelha.png",
+        pretaAmarela: "./assets/bicicleta1-pretaAmarela.png",
+        pretaAzul: "./assets/bicicleta1-pretaAzul.png",
+        pretaChumbo: "./assets/bicicleta1-pretaChumbo.png",
+        pretaLaranja: "./assets/bicicleta1-pretaLaranja.png",
+        pretaRosa: "./assets/bicicleta1-pretaRosa.png",
+        pretaVerde: "./assets/bicicleta1-pretaVerde.png",
         azul: "./assets/bicicleta1-azul.png",
         branca: "./assets/bicicleta1-branca.png",
+        chumbo: "./assets/bicicleta1-chumbo.png",
+        laranja: "./assets/bicicleta1-laranja.png",
+        rosa: "./assets/bicicleta1-rosa.png",
+        verdeClaro: "./assets/bicicleta1-verdeClaro.png",
+        verde: "./assets/bicicleta1-verde.png",
+        laranjaNeon: "./assets/bicicleta1-laranjaNeon.png",
       },
       whatsappLink:
         "https://api.whatsapp.com/send?text=Gostaria+de+saber+sobre+bicicleta+modelo+1+quanto+custa",
@@ -103,8 +115,21 @@ document.addEventListener("DOMContentLoaded", function () {
       descricao:
         "A South Voltz 2023 une estilo e desempenho, equipada com componentes Shimano de alta qualidade, garantindo uma pedalada suave e confiável para entusiastas apaixonados por ciclismo.",
       cores: {
-        preta: "./assets/bicicleta2-preta.png",
+        pretaVermelha: "./assets/bicicleta2-pretaVermelha.png",
+        pretaAmarela: "./assets/bicicleta2-pretaAmarela.png",
+        pretaAzul: "./assets/bicicleta2-pretaAzul.png",
+        pretaChumbo: "./assets/bicicleta2-pretaChumbo.png",
+        pretaLaranja: "./assets/bicicleta2-pretaLaranja.png",
+        pretaRosa: "./assets/bicicleta2-pretaRosa.png",
+        pretaVerde: "./assets/bicicleta2-pretaVerde.png",
+        azul: "./assets/bicicleta2-azul.png",
         branca: "./assets/bicicleta2-branca.png",
+        chumbo: "./assets/bicicleta2-chumbo.png",
+        laranja: "./assets/bicicleta2-laranja.png",
+        rosa: "./assets/bicicleta2-rosa.png",
+        verdeClaro: "./assets/bicicleta2-verdeClaro.png",
+        verde: "./assets/bicicleta2-verde.png",
+        laranjaNeon: "./assets/bicicleta2-laranjaNeon.png",
       },
       whatsappLink:
         "https://api.whatsapp.com/send?text=Gostaria+de+saber+sobre+bicicleta+modelo+2+quanto+custa",
@@ -128,8 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Atualiza a imagem com base na cor selecionada
     const currentBike = bicycles[currentIndex];
     const colorOptions = document
-      .querySelectorAll(".carousel-item")
-      [currentIndex].querySelectorAll(".color-circle");
+      .querySelectorAll(".carousel-item")[currentIndex].querySelectorAll(".color-circle");
 
     colorOptions.forEach((colorOption) => {
       colorOption.addEventListener("click", (event) => {
