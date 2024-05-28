@@ -139,7 +139,21 @@ document.addEventListener("DOMContentLoaded", function () {
       descricao:
         "A South Legend 2023 é a escolha definitiva para entusiastas do MTB. Com um quadro resistente, suspensão dianteira e câmbios Shimano, oferece desempenho superior em trilhas desafiadoras.",
       cores: {
+        pretaVermelha: "./assets/bicicleta3-pretVermelha.png",
+        pretaAmarela: "./assets/bicicleta3-pretaAmarela.png",
+        pretaAzul: "./assets/bicicleta3-pretaAzul.png",
+        pretaChumbo: "./assets/bicicleta3-pretaChumbo.png",
+        pretaLaranja: "./assets/bicicleta3-pretaLaranja.png",
+        pretaRosa: "./assets/bicicleta3-pretaRosa.png",
+        pretaVerde: "./assets/bicicleta3-pretaVerde.png",
+        azul: "./assets/bicicleta3-azul.png",
         branca: "./assets/bicicleta3-branca.png",
+        
+        laranja: "./assets/bicicleta3-laranja.png",
+        rosa: "./assets/bicicleta3-rosa.png",
+        verdeClaro: "./assets/bicicleta3-verdeClaro.png",
+        verde: "./assets/bicicleta3-verde.png",
+        laranjaNeon: "./assets/bicicleta3-laranjaNeon.png",
       },
       whatsappLink:
         "https://api.whatsapp.com/send?text=Gostaria+de+saber+sobre+bicicleta+modelo+3+quanto+custa",
