@@ -589,7 +589,7 @@ textarea {
   }
 
   .carousel-item {
-    margin-top: 50%;
+    margin-top: 35%;
     min-width: 100%;
     flex-shrink: 0;
     display: flex;
@@ -606,8 +606,10 @@ textarea {
   .carousel-item h2 {
     font-size: 1.5rem;
     font-weight: bolder;
+    margin-top: 30px;
   }
   .carousel-item p {
+    margin-top: 15px;
     font-size: 1rem;
   }
   .bike-img {
