@@ -181,11 +181,6 @@ textarea {
   transition: visibility 1s ease-in-out;
 }
 
-.nav-links {
-  display: flex;
-  gap: 1.8rem;
-}
-
 .logo-mobile-container {
   display: none;
 }
@@ -310,7 +305,7 @@ textarea {
 }
 .carousel-arrow {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   user-select: none;
 }
@@ -321,10 +316,14 @@ textarea {
 
 .carousel-container {
   position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   width: 100%;
   max-width: 800px;
   overflow: hidden;
+  margin-bottom: 0px;
 }
 
 .carousel {
@@ -336,9 +335,11 @@ textarea {
   min-width: 100%;
   box-sizing: border-box;
   color: white;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .bike-img {
@@ -362,18 +363,31 @@ textarea {
 }
 
 .carousel-button {
-  position: relative;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
+  text-decoration: none;
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
   background-color: #00aeee90;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  text-align: center;
+  vertical-align: middle; /* Centraliza verticalmente */
+  display: inline-flex; /* Faz com que o botão seja inline e flex */
+  align-items: center; /* Centraliza verticalmente dentro do flex container */
+  justify-content: center; /* Centraliza horizontalmente dentro do flex container */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total do botão */
+  transition: background-color 0.3s ease;
 }
+
+.carousel-button:hover {
+  background-color: #00adee;
+}
+
+.nav-links a {
+  margin-left: 30px; /* Adicione uma margem inferior aos links */
+}
+
 @media (max-width: 769px) {
   .redes-sociais {
     position: fixed;
@@ -489,13 +503,14 @@ textarea {
   .nav-links {
     display: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 10px;
     background-color: #00aeee90;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
+    z-index: 1;
   }
 
   .nav-links.show {
@@ -523,16 +538,10 @@ textarea {
     );
   }
 
-  .color-options {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
   .carousel-container {
     position: relative;
     width: 100%;
-    margin: 0 auto;
+   margin-top: 50px;
   }
 
   .carousel {
@@ -540,7 +549,7 @@ textarea {
   }
 
   .carousel-item {
-     margin-top: 50%;
+    margin-top: 50%;
     min-width: 100%;
     flex-shrink: 0;
     display: flex;
@@ -550,8 +559,17 @@ textarea {
     text-align: center;
     padding: 20px;
     width: 2rem;
+    background: rgba(255, 255, 255, 0.363);
+    margin-bottom: 10px;
   }
 
+  .carousel-item h2 {
+     font-size: 1.5rem;
+     font-weight: bolder;
+  }
+  .carousel-item p {
+    font-size: 1rem;
+  }
   .bike-img {
     max-width: 100%;
     height: auto;
@@ -564,15 +582,19 @@ textarea {
   }
 
   .carousel-button {
-    width: 90%;
+    width: 95%;
+     background-color: rgba(255, 255, 255, 0.39);
+     font-size: 1.4rem;
   }
   .carousel-arrow {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   .color-options {
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   .color-circle {
