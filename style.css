@@ -342,6 +342,17 @@ textarea {
   padding: 20px;
 }
 
+  .carousel-item h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+  .carousel-item p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
 .bike-img {
   width: 70%;
   height: auto;
