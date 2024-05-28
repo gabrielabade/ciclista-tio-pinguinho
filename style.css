@@ -265,6 +265,9 @@ textarea {
   color: white;
   font-size: 1.2rem;
 }
+.redes-sociais-home{
+  display: none;
+}
 
 .redes-sociais {
   display: flex;
