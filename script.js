@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         laranjaNeon: "./assets/bicicleta1-laranjaNeon.png",
       },
       whatsappLink:
-        "https://api.whatsapp.com/send?text=Gostaria+de+saber+sobre+bicicleta+modelo+1+quanto+custa",
+        "https://api.whatsapp.com/send?text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Slim+da+South+quanto+custa",
     },
     {
       modelo: "Bicicleta Voltz 2023",
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
         laranjaNeon: "./assets/bicicleta2-laranjaNeon.png",
       },
       whatsappLink:
-        "https://api.whatsapp.com/send?text=Gostaria+de+saber+sobre+bicicleta+modelo+2+quanto+custa",
+        "https://api.whatsapp.com/send?text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Voltz+da+South+quanto+custa",
     },
     {
       modelo: "Bicicleta Legend 2023",
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pretaVerde: "./assets/bicicleta3-pretaVerde.png",
         azul: "./assets/bicicleta3-azul.png",
         branca: "./assets/bicicleta3-branca.png",
-        
+
         laranja: "./assets/bicicleta3-laranja.png",
         rosa: "./assets/bicicleta3-rosa.png",
         verdeClaro: "./assets/bicicleta3-verdeClaro.png",
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         laranjaNeon: "./assets/bicicleta3-laranjaNeon.png",
       },
       whatsappLink:
-        "https://api.whatsapp.com/send?text=Gostaria+de+saber+sobre+bicicleta+modelo+3+quanto+custa",
+        "https://api.whatsapp.com/send?text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Legend+da+South+quanto+custa",
     },
   ];
 
