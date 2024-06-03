@@ -34,15 +34,18 @@ body {
   display: flex;
   align-items: safe;
   justify-content: baseline;
-  padding: 6rem;
   height: 100vh;
   color: white;
   margin-top: 10rem;
+
+  padding: 15rem 2%; 
+  max-width: 1600px; 
+  margin: 10rem auto;
 }
 
 .caixa-principal {
   width: 50%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -82,8 +85,8 @@ video {
   background: linear-gradient(
     -100deg,
     rgba(10, 12, 16, 0.162) 15%,
-    rgba(3, 21, 57, 0.7) 50%,
-    rgba(10, 12, 16, 0.99) 85%
+    rgba(3, 21, 57, 0.548) 50%,
+    rgba(10, 12, 16, 0.959) 85%
   );
   position: fixed;
   top: 0;
@@ -269,7 +272,7 @@ textarea {
 .redes-sociais {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 6rem;
 }
 
 .redes-sociais a {
