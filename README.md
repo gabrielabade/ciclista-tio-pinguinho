@@ -21,11 +21,6 @@ Você pode visualizar a aplicação online [aqui](https://). -->
 
 <div>
 
-<video width="320" height="240"  autoplay loop muted>
-  <source src="./assets/preview.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
+![Preview do projeto](./assets/preview.gif)
 
 </div>
