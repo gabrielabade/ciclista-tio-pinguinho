@@ -24,16 +24,3 @@ Você pode visualizar a aplicação online [aqui](https://ciclistatiopinguinho.n
 ![Preview do projeto](./assets/preview.gif)
 
 </div>
-
-
-### Tecnologias utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-
-<div>
-
-![Preview do projeto](./assets/preview.gif)
-
-</div>
