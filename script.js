@@ -29,7 +29,7 @@ form.addEventListener("submit", function (event) {
 
   const mensagem = `Olá, meu nome é ${nome}. Meu telefone é ${telefone}. Minha dúvida é: ${duvida}.`;
   const mensagemCodificada = encodeURIComponent(mensagem);
-  const whatsappLink = `https://wa.me/5548991056014?text=${mensagemCodificada}`;
+  const whatsappLink = `https://wa.me/5551998393149?text=${mensagemCodificada}`;
 
   document.getElementById("whatsappLink").href = whatsappLink;
   window.open(whatsappLink, "_blank");
