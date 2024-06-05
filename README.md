@@ -1,6 +1,6 @@
 ## Ciclista Tio Pinguinho - Loja de Bicicletas peças e acessórios
 
-Este é um projeto de página web desenvolvido para ciclista tio pinguinho, apresentando serviços oferecidos e marcas com que trabalha. A página inclui formulário para pedidos de orçamento e dúvidas. Acesso rápido às páginas no Facebook, Instagram e WhatsApp.
+Este é um projeto de página web desenvolvido para ciclista tio pinguinho, apresentando serviços oferecidos e marcas com que trabalha. A página inclui formulário para pedidos de orçamento e dúvidas. Acesso rápido às redes sociais.
 
 ### Funcionalidades
 
@@ -9,9 +9,22 @@ Este é um projeto de página web desenvolvido para ciclista tio pinguinho, apre
 - **Orçamento fácil:** Botões de ação estão disponíveis para facilitar o orçamento dos serviços, com links diretos para o WhatsApp da empresa.
 - **Facilidade de navegação:** A página é organizada de forma clara e intuitiva, permitindo que os usuários encontrem facilmente as informações desejadas.
 
-<!-- ### Como visualizar
+ ### Como visualizar
 
-Você pode visualizar a aplicação online [aqui](https://). -->
+Você pode visualizar a aplicação online [aqui](https://ciclistatiopinguinho.netlify.app/)
+
+### Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+<div>
+
+![Preview do projeto](./assets/preview.gif)
+
+</div>
+
 
 ### Tecnologias utilizadas
 
