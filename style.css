@@ -442,6 +442,11 @@ textarea {
   margin-left: 30px; /* Adicione uma margem inferior aos links */
 }
 
+.hidden {
+  display: none;
+}
+
+
 @media (max-width: 769px) {
   .redes-sociais {
     position: fixed;
