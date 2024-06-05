@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         laranjaNeon: "./assets/bicicleta1-laranjaNeon.png",
       },
       whatsappLink:
-        "https://api.whatsapp.com/send?send?phone=51998393149&text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Slim+da+South+quanto+custa",
+        "https://api.whatsapp.com/send?phone=51998393149&text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Slim+da+South+quanto+custa",
     },
     {
       modelo: "Bicicleta Voltz 2023",
