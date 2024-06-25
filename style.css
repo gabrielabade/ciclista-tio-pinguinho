@@ -553,9 +553,13 @@ textarea {
 
   .video-mobile {
     display: block;
-    width: 150%;
-    height: auto;
+   min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
