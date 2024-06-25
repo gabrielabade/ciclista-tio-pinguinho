@@ -492,7 +492,9 @@ textarea {
   .logo-mobile-container {
     display: block;
     position: absolute;
-    margin-top: 5px;
+    width: 100%;
+    margin-top: 18px;
+    top: 0;
   }
 
   .menu-icon {
@@ -591,7 +593,7 @@ textarea {
       rgba(10, 12, 16, 0.99) 85%
     );
   }
- 
+
   .carousel-container {
     position: relative;
     width: 100%;
