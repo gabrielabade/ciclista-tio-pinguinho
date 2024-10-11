@@ -495,6 +495,7 @@ textarea {
     width: 100%;
     margin-top: 18px;
     top: 0;
+    z-index: 10;
   }
 
   .menu-icon {
@@ -505,6 +506,7 @@ textarea {
     bottom: 20px;
     transform: translateX(-50%);
     z-index: 1000;
+    z-index: 10;
   }
 
   .caixa-mae {
