@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         laranjaNeon: "./assets/bicicleta1-laranjaNeon.png",
       },
       whatsappLink:
-        "https://api.whatsapp.com/send?phone=5551998393149&text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Slim+da+South+quanto+custa",
+        "https://api.whatsapp.com/send?phone=5551998393149&text=Olá+,+venho+através+do+seu+site+.+Tenho+interesse+em+saber+sobre+bicicleta+Slim+da+South+.+Quanto+custa+?",
     },
     {
       modelo: "Bicicleta Voltz 2023",
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
         laranjaNeon: "./assets/bicicleta2-laranjaNeon.png",
       },
       whatsappLink:
-        "https://api.whatsapp.com/send?phone=5551998393149&text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Voltz+da+South+quanto+custa",
+        "https://api.whatsapp.com/send?phone=5551998393149&text=Olá+,+venho+atraves+do+seu+site+.+Tenho+interesse+em+saber+sobre+bicicleta+Voltz+da+South+.+Quanto+custa+?",
     },
     {
       modelo: "Bicicleta Legend 2023",
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         laranjaNeon: "./assets/bicicleta3-laranjaNeon.png",
       },
       whatsappLink:
-        "https://api.whatsapp.com/send?phone=5551998393149&text=Olá+tenho+interesse+em+saber+sobre+bicicleta+Legend+da+South+quanto+custa",
+        "https://api.whatsapp.com/send?phone=5551998393149&text=Olá+,+venho+através+do+seu+site+.+Tenho+interesse+em+saber+sobre+bicicleta+Legend+da+South+,+Quanto+custa+?",
     },
   ];
 
