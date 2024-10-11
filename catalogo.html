@@ -19,9 +19,12 @@
 </head>
 
 <body>
+  <!-- máscara para o formulário -->
+  <div class="mascara-formulario" onclick="hideForm()"></div>
+
   <!-- Logo para dispositivos móveis -->
   <div class="logo-mobile-container">
-    <a href="index.html">
+    <a href="./index.html">
       <img src="./assets/logo-mobile.png" alt="logo-mobile" class="logo-mobile">
     </a>
   </div>
@@ -139,6 +142,17 @@
       <video src="./assets/video.mp4" autoplay muted loop class="video-desktop" type="video/mp4"></video>
       <video src="./assets/video-mobile.mp4" autoplay muted loop class="video-mobile" type="video/mp4"></video>
       <div class="mascara"></div>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section>
+      <form id="formularioFaleConosco" class="formulario-fale-conosco">
+        <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
+        <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
+        <textarea id="duvida" placeholder="Digite o que você precisa para sua bicicleta aqui" name="duvida"
+          required></textarea>
+        <button type="submit">Pedir Orçamento</button>
+      </form>
     </section>
 
     <!-- WhatsApp Contact -->
