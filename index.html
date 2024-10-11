@@ -4,49 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Ciclista Tio Pinguinho Ltda, fundada em 1979, é especializada em bicicletas e artigos esportivos. Oferecemos assistência técnica autorizada e serviços para esteiras Dream Fitness.">
+  <meta name="keywords"
+    content="bicicletas, peças, acessórios, Dream Fitness, Campo Bom, RS, ciclista, manutenção, assistência técnica">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ciclista Tio Pinguinho - Bicicletas e Acessórios">
+  <meta property="og:description" content="As melhores ofertas em bicicletas e acessórios. Solicite um orçamento.">
+  <meta property="og:url" content="https://ciclistatiopinguinho.netlify.app/">
+  <!-- External Links -->
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <meta name="description"
-    content="Ciclista Tio Pinguinho Ltda, fundada em 1979, é uma renomada empresa especializada em bicicletas e artigos esportivos. Somos uma assistência técnica e autorizada que trabalha com marcas de alta qualidade, incluindo SouthBike, Mormai, Ciclo, Monark, Caloi, Prince, Houston, Fischer, Oceano entre outras.
-      Além disso, oferecemos serviços para esteiras da Dream Fitness. Estamos localizados na Av. São Leopoldo, Nº 1830, no Centro de Campo Bom, no estado do Rio Grande do Sul, RS. Você pode nos contatar pelos seguintes telefones: (51) 3597-1000 / (51) 99839-3149." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Tio Pinguinho</title>
   <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png">
 
+  <title>Tio Pinguinho</title>
 </head>
 
 <body>
+
   <div class="mascara-formulario" onclick="hideForm()"></div>
-  <div class="logo-mobile-container">
-    <img src="./assets/logo-mobile.png" alt="logo-mobile" class="logo-mobile">
-  </div>
 
-  <div class="header">
+  <header class="header">
     <img src="./assets/logo-header.png" alt="logo-ciclista" class="logo-desktop">
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <div class="nav-links">
-      <a href="./index.html">Home</a>
-      <a href="./sobre.html">Sobre</a>
-      <a href="catalogo.html">Catálogo</a>
-    </div>
-  </div>
 
-  <main>
-    <div class="caixa-mae">
-      <div class="caixa-principal">
-        <h3>ACELERE OS PEDAIS E VENHA CONFERIR</h3>
-        <h2>BICICLETAS, PEÇAS E ACESSÓRIOS</h2>
-        <h3>AS MELHORES OFERTAS É AQUI</h3>
-        <button onclick="showForm()">Entre em contato</button>
-      </div>
+    <div class="logo-mobile-container">
+      <img src="./assets/logo-mobile.png" alt="logo-mobile" class="logo-mobile">
     </div>
-
-    <a id="whatsappLink" href="https://wa.me/5551998393149?text=Olá+venho+através+do+seu+site+tio+pinguinho"
-      class="link-whatsapp" target="_blank">
-      <i class="fab fa-whatsapp"></i>
-    </a>
 
     <div class="caixa-video">
       <video src="./assets/video.mp4" autoplay muted loop class="video-desktop" type="video/mp4"></video>
@@ -54,27 +41,54 @@
       <div class="mascara"></div>
     </div>
 
+    <!-- WhatsApp Contact -->
+    <a id="whatsappLink" href="https://wa.me/5551998393149?text=Olá+venho+através+do+seu+site+tio+pinguinho"
+      class="link-whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
-    <form id="formularioFaleConosco" class="formulario-fale-conosco">
-      <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
-      <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
-      <textarea id="duvida" placeholder="Digite o que você precisa para sua bicicleta aqui" name="duvida"
-        required></textarea>
-      <button type="submit">Pedir Orçamento</button>
-    </form>
+    <!-- Navigation -->
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./sobre.html">Sobre</a>
+        <a href="catalogo.html">Catálogo</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="caixa-mae">
+      <article class="caixa-principal">
+        <h3>ACELERE OS PEDAIS E VENHA CONFERIR</h3>
+        <h2>BICICLETAS, PEÇAS E ACESSÓRIOS</h2>
+        <h3>AS MELHORES OFERTAS É AQUI</h3>
+        <button onclick="showForm()">Entre em contato</button>
+      </article>
+    </section>
+
+    <section>
+      <form id="formularioFaleConosco" class="formulario-fale-conosco">
+        <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
+        <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
+        <textarea id="duvida" placeholder="Digite o que você precisa para sua bicicleta aqui" name="duvida"
+          required></textarea>
+        <button type="submit">Pedir Orçamento</button>
+      </form>
+    </section>
   </main>
 
 
   <footer>
-    <div class="redes-sociais hidden">
+    <section class="redes-sociais hidden">
       <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/tiopinguinho/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:ciclistatiopinguinho@yahoo.com.br"><i class="fas fa-envelope"></i></a>
       <a href="https://wa.me/5551998393149?text=Olá+venho+através+do+seu+site+tio+pinguinho" target="_blank"><i
           class="fab fa-whatsapp"></i></a>
-    </div>
+    </section>
   </footer>
-  </div>
 
   <script src="script.js"></script>
 </body>
