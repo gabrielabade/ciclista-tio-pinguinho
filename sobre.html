@@ -9,11 +9,15 @@
     content="Conheça a história da Ciclista Tio Pinguinho, especializada em bicicletas e artigos esportivos desde 1979.">
   <meta name="keywords"
     content="história, assistência técnica, manutenção de bicicletas, artigos esportivos, Dream Fitness">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ciclistatiopinguinho.netlify.app/sobre">
+
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Ciclista Tio Pinguinho | Bicicletas e Acessórios em Campo Bom">
   <meta property="og:description"
     content="Especializados em bicicletas e artigos esportivos desde 1979, oferecendo assistência técnica de qualidade.">
   <meta property="og:url" content="https://ciclistatiopinguinho.netlify.app/sobre">
+
   <!-- Stylesheets and Fonts -->
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,31 +28,36 @@
   <title>Sobre - Ciclista Tio Pinguinho</title>
   <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png">
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-261RKDHWNE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-
   gtag('config', 'G-261RKDHWNE');
 </script>
+
 <body>
   <div class="mascara-formulario" onclick="hideForm()"></div>
 
   <div class="logo-mobile-container">
     <a href="index.html">
-    <img src="./assets/logo-mobile.png" alt="logo-mobile" class="logo-mobile">
+      <img src="./assets/logo-mobile.png" alt="Logo Ciclista Tio Pinguinho para dispositivos móveis"
+        class="logo-mobile">
     </a>
   </div>
 
   <header class="header">
-    <img src="./assets/logo-header.png" alt="logo-ciclista" class="logo-desktop">
-
+    <img src="./assets/logo-header.png" alt="Logo Ciclista Tio Pinguinho" class="logo-desktop">
 
     <div class="caixa-video">
-      <video src="./assets/video.mp4" autoplay muted loop class="video-desktop" type="video/mp4"></video>
-      <video src="./assets/video-mobile.mp4" autoplay muted loop class="video-mobile" type="video/mp4"></video>
+      <video autoplay muted loop class="video-desktop" type="video/mp4">
+        <source src="./assets/video.mp4" type="video/mp4">
+      </video>
+      <video autoplay muted loop class="video-mobile" type="video/mp4">
+        <source src="./assets/video-mobile.mp4" type="video/mp4">
+      </video>
       <div class="mascara"></div>
     </div>
 
@@ -59,11 +68,11 @@
     </a>
 
     <!-- Navigation -->
-    <nav>
+    <nav role="navigation" aria-label="Navegação principal">
       <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="./index.html">Home</a>
+        <a href="./sobre.html">Sobre</a>
         <a href="catalogo.html">Catálogo</a>
       </div>
     </nav>
@@ -71,28 +80,26 @@
 
   <main>
     <nav class="accordion-container">
-
       <section class="accordion">
         <h2 class="accordion-header">Sobre Ciclista Tio Pinguinho <i class="fas fa-chevron-down"></i></h2>
         <div class="accordion-content">
-          <p>Fundada em 1979, Ciclista Tio Pinguinho é uma empresa renomada em Campo Bom, especializada no mercado de
+          <p>Fundada em 1979, a Ciclista Tio Pinguinho é uma empresa renomada em Campo Bom, especializada no mercado de
             bicicletas, peças e acessórios. Com mais de quatro décadas de experiência, nos dedicamos à excelência e à
             total satisfação de nossos clientes.</p>
         </div>
       </section>
 
       <section class="accordion">
-        <h2 class="accordion-header">Nossa Filosofia<i class="fas fa-chevron-down"></i></h2>
+        <h2 class="accordion-header">Nossa Filosofia <i class="fas fa-chevron-down"></i></h2>
         <div class="accordion-content">
           <p>Nosso compromisso é oferecer produtos e serviços de alta qualidade, mantendo parcerias estratégicas com os
             melhores fornecedores nacionais e internacionais. Isso nos permite acompanhar os avanços tecnológicos do
-            setor
-            e garantir a confiabilidade de tudo o que oferecemos.</p>
+            setor e garantir a confiabilidade de tudo o que oferecemos.</p>
         </div>
       </section>
 
       <section class="accordion">
-        <h2 class="accordion-header">Nossos Produtos e Serviços<i class="fas fa-chevron-down"></i></h2>
+        <h2 class="accordion-header">Nossos Produtos e Serviços <i class="fas fa-chevron-down"></i></h2>
         <div class="accordion-content">
           <p>No Tio Pinguinho, você encontra uma ampla variedade de bicicletas e artigos esportivos das marcas mais
             conceituadas, como SouthBike, Mormaii, Ciclo, Monark, Caloi, Prince, Houston, Fischer, Oceano, entre outras.
@@ -103,7 +110,7 @@
       </section>
 
       <section class="accordion">
-        <h2 class="accordion-header">Nossa Missão<i class="fas fa-chevron-down"></i></h2>
+        <h2 class="accordion-header">Nossa Missão <i class="fas fa-chevron-down"></i></h2>
         <div class="accordion-content">
           <p>Nosso objetivo é contribuir para a melhoria da qualidade de vida das pessoas, promovendo o uso da bicicleta
             em diversas esferas. Acreditamos que a bicicleta é uma invenção maravilhosa que proporciona benefícios tanto
@@ -112,13 +119,13 @@
       </section>
 
       <section class="accordion">
-        <h2 class="accordion-header">Onde Estamos<i class="fas fa-chevron-down"></i></h2>
+        <h2 class="accordion-header">Onde Estamos <i class="fas fa-chevron-down"></i></h2>
         <div class="accordion-content">
           <p>Visite nossa loja localizada na Av. São Leopoldo, Nº 1830, no Bairro Celeste, Campo Bom, RS. Nossa equipe
             está à disposição para ajudar você a encontrar o produto ou serviço perfeito.</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.194496104442!2d-51.07429878933505!3d-29.68514027500272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951941344f09aa45%3A0x74743637694296b1!2sCiclista%20tio%20pinguinho!5e0!3m2!1spt-BR!2sbr!4v1716574727695!5m2!1spt-BR!2sbr"
-            width="300" height="200" style="border: 3px solid #00aeeea8;  border-radius: 10px; margin-top: 10px;"
+            width="300" height="200" style="border: 3px solid #00aeeea8; border-radius: 10px; margin-top: 10px;"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
@@ -126,27 +133,34 @@
   </main>
 
   <!-- Contact Form -->
-  <section>
-    <form id="formularioFaleConosco" class="formulario-fale-conosco">
-      <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
-
-      <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
-
-      <textarea id="duvida" placeholder="Escreva o que você precisa para orçamento aqui" name="duvida"
-        required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+<section>
+  <form id="formularioFaleConosco" class="formulario-fale-conosco">
+    <input id="nome" placeholder="Seu nome" type="text" name="nome" required aria-labelledby="nome-label">
+    <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required
+      aria-labelledby="telefone-label">
+    <textarea id="duvida" placeholder="Escreva o que você precisa para orçamento aqui" name="duvida" required
+      aria-labelledby="duvida-label"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
 
+  <!-- Redes sociais -->
   <footer>
     <section class="redes-sociais">
-      <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/tiopinguinho/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:ciclistatiopinguinho@yahoo.com.br"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/5551998393149?text=Olá+tio+pinguinho+,+venho+através+do+seu+site+!" target="_blank"><i
-          class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/tiopinguinho/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:ciclistatiopinguinho@yahoo.com.br" aria-label="E-mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5551998393149?text=Olá+tio+pinguinho+,+venho+através+do+seu+site+!" target="_blank"
+        aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </section>
   </footer>
 

@@ -37,7 +37,6 @@
 
   gtag('config', 'G-261RKDHWNE');
 </script>
-<!-- Marcação JSON-LD gerada pelo Assistente de marcação para dados estruturados do Google. -->
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -58,12 +57,20 @@
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": {
       "@type": "DayOfWeek",
-      "name": "Segunda a Sexta 09:00–18:30, Sabado 09:00–15:00"
+      "name": "Segunda a Sexta 09:00–18:30, Sábado 09:00–15:00"
     }
   },
-  "url": "https://ciclistatiopinguinho.netlify.app/"
+  "url": "https://ciclistatiopinguinho.netlify.app/",
+  "video": {
+    "@type": "VideoObject",
+    "name": "Vídeo de Demonstração",
+    "description": "Vídeo mostrando nosso produto.",
+    "contentUrl": "https://ciclistatiopinguinho.netlify.app/assets/video.mp4",
+    "uploadDate": "2024-10-16"
+  }
 }
 </script>
+
 
 <body>
 
@@ -77,10 +84,15 @@
     <img src="./assets/logo-header.png" alt="Logo Ciclista Tio Pinguinho para computadores" class="logo-desktop">
 
     <div class="caixa-video">
-      <video src="./assets/video.mp4" autoplay muted loop class="video-desktop" type="video/mp4"></video>
-      <video src="./assets/video-mobile.mp4" autoplay muted loop class="video-mobile" type="video/mp4"></video>
+      <video autoplay muted loop class="video-desktop" type="video/mp4">
+        <source src="./assets/video.mp4" type="video/mp4">
+      </video>
+      <video autoplay muted loop class="video-mobile" type="video/mp4">
+        <source src="./assets/video-mobile.mp4" type="video/mp4">
+      </video>
       <div class="mascara"></div>
     </div>
+
 
     <!-- WhatsApp Contact -->
     <a id="whatsappLink" href="https://wa.me/5551998393149?text=Olá+tio+pinguinho+,+venho+através+do+seu+site+!"
@@ -89,7 +101,7 @@
     </a>
 
     <!-- Navigation -->
-    <nav>
+    <nav role="navigation" aria-label="Navegação principal">
       <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
       <div class="nav-links">
         <a href="./index.html">Home</a>
@@ -112,23 +124,33 @@
     <!-- Contact Form -->
     <section>
       <form id="formularioFaleConosco" class="formulario-fale-conosco">
-        <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
-        <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
-        <textarea id="duvida" placeholder="Digite o que você precisa para sua bicicleta aqui" name="duvida"
-          required></textarea>
-        <button type="submit">Pedir Orçamento</button>
+        <input id="nome" placeholder="Seu nome" type="text" name="nome" required aria-labelledby="nome-label">
+        <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required
+          aria-labelledby="telefone-label">
+        <textarea id="duvida" placeholder="Escreva o que você precisa para orçamento aqui" name="duvida" required
+          aria-labelledby="duvida-label"></textarea>
+        <button type="submit">Enviar</button>
       </form>
     </section>
+
   </main>
 
-
+  <!-- Redes sociais -->
   <footer>
-    <section class="redes-sociais hidden">
-      <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/tiopinguinho/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:ciclistatiopinguinho@yahoo.com.br"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/5551998393149?text=Olá+tio+pinguinho+,+venho+através+do+seu+site+!" target="_blank"><i
-          class="fab fa-whatsapp"></i></a>
+    <section class="redes-sociais">
+      <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/tiopinguinho/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:ciclistatiopinguinho@yahoo.com.br" aria-label="E-mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5551998393149?text=Olá+tio+pinguinho+,+venho+através+do+seu+site+!" target="_blank"
+        aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </section>
   </footer>
 
