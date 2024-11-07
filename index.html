@@ -83,30 +83,36 @@
 
 <body>
 
-  <header class="header">
-    <!-- Logo Mobile -->
-    <img src="./assets/logo-mobile.png" alt="Logo Ciclista Tio Pinguinho para dispositivos móveis" class="logo-mobile"
-      loading="lazy">
-    <!-- Logo Desktop -->
-    <img src="./assets/logo-header.png" alt="Logo Ciclista Tio Pinguinho para computadores" class="logo-desktop"
-      loading="lazy">
+  <div class="mascara-formulario" onclick="hideForm()"></div>
 
-    <!-- Background Video -->
+  <div class="logo-mobile-container">
+    <a href="index.html">
+      <img src="./assets/logo-mobile.png" alt="Logo Ciclista Tio Pinguinho para dispositivos móveis"
+        class="logo-mobile">
+    </a>
+  </div>
+
+  <header class="header">
+    <img src="./assets/logo-header.png" alt="Logo Ciclista Tio Pinguinho" class="logo-desktop">
+
     <div class="caixa-video">
-      <video autoplay muted loop playsinline>
-        <source src="./assets/video.mp4" type="video/mp4" media="(min-width: 768px)">
-        <source src="./assets/video-mobile.mp4" type="video/mp4" media="(max-width: 767px)">
+      <video autoplay muted loop class="video-desktop" type="video/mp4">
+        <source src="./assets/video.mp4" type="video/mp4">
+      </video>
+      <video autoplay muted loop class="video-mobile" type="video/mp4">
+        <source src="./assets/video-mobile.mp4" type="video/mp4">
       </video>
       <div class="mascara"></div>
     </div>
 
     <!-- WhatsApp Contact -->
-    <a href="https://wa.me/5551998393149?text=Olá+tio+pinguinho+,+venho+através+do+seu+site+!" class="link-whatsapp"
-      target="_blank" rel="noopener" aria-label="Entre em contato pelo WhatsApp">
+    <a id="whatsappLink" href="https://wa.me/5551998393149?text=Olá+tio+pinguinho+venho+através+do+seu+site"
+      class="link-whatsapp hidden" target="_blank" aria-label="Entre em contato pelo WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
+
     <!-- Navigation -->
-    <nav>
+    <nav role="navigation" aria-label="Navegação principal">
       <div class="menu-icon" onclick="toggleMenu()" aria-label="Abrir menu">&#9776;</div>
       <div class="nav-links">
         <a href="./index.html">Home</a>
@@ -127,7 +133,6 @@
     </section>
 
     <!-- Contact Form -->
-    <div class="mascara-formulario" onclick="hideForm()"></div>
     <section>
       <form id="formularioFaleConosco" class="formulario-fale-conosco">
         <input id="nome" placeholder="Seu nome" type="text" name="nome" required aria-labelledby="nome-label">
