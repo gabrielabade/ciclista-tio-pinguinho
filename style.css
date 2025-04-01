@@ -228,33 +228,56 @@ button:hover {
   background-color: #00adee;
   color: white;
   font-weight: bold;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.2rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 15px rgba(0, 173, 238, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-cta:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.6s;
+  transform: skewX(-15deg);
+}
+
+.main-cta:hover:before {
+  left: 100%;
 }
 
 .main-cta:hover {
-  background-color: white;
-  color: #00adee;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #0095ce;
+  transform: translateY(-5px);
+  box-shadow: 0 7px 20px rgba(0, 173, 238, 0.6);
 }
 
 .secondary-cta {
   background-color: transparent;
   color: white;
   font-weight: bold;
-  padding: 0.9rem 2rem;
+  padding: 1.1rem 2.2rem;
   border: 2px solid white;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
+  letter-spacing: 1.5px;
+  font-size: 1.15rem;
+  position: relative;
+  z-index: 1;
 }
 
 .secondary-cta:hover {
@@ -262,6 +285,29 @@ button:hover {
   color: #00adee;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.secondary-cta:hover:before {
+  width: 100%;
+}
+
+.secondary-cta:hover {
+  color: #00adee;
+  border-color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 7px 20px rgba(255, 255, 255, 0.3);
 }
 
 .main-cta,
@@ -313,52 +359,87 @@ button:hover {
    ========================================================================== */
 /* Hero Section */
 .hero-section {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  padding: 4rem 3rem;
+  padding: 5rem 3rem;
   position: relative;
   z-index: 5;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-content {
   max-width: 650px;
   margin: 0;
+  animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-slogan {
   font-family: "Anton", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: white;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   line-height: 1.2;
   max-width: 700px;
+  position: relative;
+  padding-left: 15px;
+  border-left: 4px solid #00adee;
 }
 
 .hero-title {
   font-family: "Anton", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #00adee;
-  margin-bottom: 0.7rem;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 2px 15px rgba(0, 173, 238, 0.3);
+  letter-spacing: 2.5px;
   line-height: 1.2;
-  max-width: 700px;
+  max-width: 100%;
   display: block;
+  background: linear-gradient(135deg, #00adee 0%, #0077a9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-subtitle {
   font-family: "Anton", sans-serif;
   font-size: 1.8rem;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   max-width: 700px;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .hero-section .container {
@@ -370,8 +451,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.2rem;
-  margin-top: 2.5rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
   width: 100%;
   max-width: 400px;
 }
